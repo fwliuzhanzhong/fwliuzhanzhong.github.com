@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Allen Blog</title>
+ <link href="http://allenonthinking.github.com/" rel="self"/>
+ <link href="http://allenonthinking.github.com"/>
+ <updated>2013-11-12T22:43:16+08:00</updated>
+ <id>http://allenonthinking.github.com</id>
+ <author>
+   <name>Allen</name>
+   <email>417325330@qq.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>New Start</title>
+   <link href="http://allenonthinking.github.com/2013/11/12/new-start"/>
+   <updated>2013-11-12T00:00:00+08:00</updated>
+   <id>http://allenonthinking.github.com/2013/11/12/new-start</id>
+   <content type="html"></content>
+ </entry>
+ 
+ 
+</feed>

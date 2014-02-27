@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Allen Blog</title>
+        <description>Allen Blog - Allen</description>
+        <link>http://allenonthinking.github.com</link>
+        <link>http://allenonthinking.github.com</link>
+        <lastBuildDate>2013-11-12T22:43:16+08:00</lastBuildDate>
+        <pubDate>2013-11-12T22:43:16+08:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>New Start</title>
+                <description></description>
+                <link>http://allenonthinking.github.com/2013/11/12/new-start</link>
+                <guid>http://allenonthinking.github.com/2013/11/12/new-start</guid>
+                <pubDate>2013-11-12T00:00:00+08:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
