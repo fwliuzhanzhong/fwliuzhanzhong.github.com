@@ -14,7 +14,7 @@ author :
   name : Allen Liu
   email : 417325330@qq.com
   github : allenliuembracesource
-  weibo : u/1219101280
+  weibo : 1219101280
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -92,7 +92,7 @@ JB :
       width: 580
       colorscheme: light
     duoshuo :
-      name : javachen
+      name : allenliublog
       comments :
         num: 5
         avatar : 0
