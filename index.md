@@ -1,46 +1,50 @@
 ---
 layout: page
 title: Allen Blog
-tagline: Supporting tagline
+tagline: 年轻没有什么不可以
 ---
 {% include JB/setup %}
+{% for post in paginator.posts %}
+<article>
+    <h2 class="entry-title under_line"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {% if post.description %}
+      {{ post.description }}
+    {% else %}
+		{% if post.content contains "<!-- more -->" %}
+		  {{ post.content | split:'<!-- more -->' |first }}
+		{% else %}
+		  {{ post.content }}
+		{% endif %} 
+    {% endif %} 
+      <div class="status">
+        <!--<a class="btn btn-default btn-sm pull-left" href="{{ post.url }}"><span class="readmore">more &raquo; </span></a>-->
+        <div class="clearfix"></div>
+      </div>
+</article>
+{% endfor %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
-
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+<!-- Pagination links -->
+<div class="pull-right">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a class="btn btn-default btn-sm" href="/">Home</a>
+    <a class="btn btn-default btn-sm" href="/">&laquo; Prev</a>
+    {% else %}
+    <a class="btn btn-default btn-sm" href="/">Home</a>
+    <a class="btn btn-default btn-sm" href="/page{{paginator.previous_page}}/">&laquo; Prev</a>
+    {% endif %}
+  {% else %}
+    <span><a class="btn btn-default btn-sm disabled" href="/">Home</a></span>
+    <span><a class="btn btn-default btn-sm disabled">&laquo; Prev</a></span>
+  {% endif %}
+  <span><a class="btn btn-default btn-sm disabled">Page: {{paginator.page}} of {{paginator.total_pages}}</a></span>
+  {% if paginator.next_page %}
+    <a class="btn btn-default btn-sm" href="/page{{paginator.next_page}}/">Next &raquo;</a>
+    <a class="btn btn-default btn-sm" href="/page{{paginator.total_pages}}/">Last</a>
+  {% else if paginator.page == paginator.total_pages %}
+    <span><a class="btn btn-default btn-sm disabled">Next &raquo;</a></span>
+    <span><a class="btn btn-default btn-sm disabled">Last</a></span>
+  {% endif %}
+</div>
 
 
