@@ -7,13 +7,12 @@ comment: true
 
 # 关于我
 
-- Java程序员，就职于北京一家做开源解决方案的公司
-- 关注Java开源、大数据、缓存
+- 先后就职于VMware、FreeWheel等外资IT公司，专注于IT行业人力资源管理。
 
 # 联系我
 
-- Email：allen.liu@embracesource.com
-- Weibo: <a href='http://weibo.com/1219101280'>@Allen-Thinking</a>
+- Email：zzliu@freewheel.tv
+- Weibo: <a href='http://weibo.com/liuzhanzhong'>@小站想走走Leo</a>
 
 # 关于版权
 
@@ -24,7 +23,7 @@ comment: true
 * 如果您想转载，请署名及附上原文链接，转载时不得修改原文
 
 
->生活是一种修行。 
+>恋着简单的幸福，爱着明天的路。 
 
 
 
