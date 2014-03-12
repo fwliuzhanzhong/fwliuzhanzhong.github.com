@@ -9,7 +9,7 @@ comment: true
 
 - 先后就职于VMware、FreeWheel等外资IT公司，专注于IT行业人力资源管理。
 
-# 我的公司
+# 就职公司
 
 - FreeWheel是一家外商独资公司，创建于2007年，总部位于美国加州的Palo Alto，创始人是Douglas Knopper, Jon Heller和Diane Yu。公司由硅谷著名的风险投资机构 Battery Ventures等投资，提供互联网视频广告投放，监测，预测，增值等关键解决方案。北京研发中心目前负责FreeWheel全线产品的研发工作，包括订单管理、广告投放系统，API平台，高性能互联网在线广告服务器，海量日志处理，广告预测，视频前端整合, 财务结算系统等。
 
